@@ -1,32 +1,67 @@
-.App {
+/* custom css */
+
+body  {
+  background-image: url("./img/money-currency-cash-banknote.jpg");
+}
+
+/* general */
+h1, h3, p, button {
   text-align: center;
+  text-shadow: 2px 2px 8px #FF0000;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Selector section */
+.SelectorSection {
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.SelectorButtonsContainer {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SelectorButton {
+  flex: 2;
+  background: transparent;
+  color: yellowgreen;
+  padding: 10px;
+  transition: background 1s ease-in-out;
+}
+
+.SelectorButton:hover {
+  background: teal;
+  box-shadow: inset 0 0 10px #000000;
+  font-weight: bolder;
+  
+}
+
+/* Chart section */
+#ChartContainer {
+  border-bottom: 1px solid #000;
+  display: flex;
+  height: 400px;
+  align-items: flex-end;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.ChartBar {
+  background-color: rgb(5, 104, 5);
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px #000000;
+  color: white;
+  margin: 0 10px;
+  min-width: 120px;
+  min-height: 1px;
+}
+
+.ChartBar-label {
+  padding: 5px;
+}
+
+.ChartBar:hover {
+  background-color: rgb(255, 145, 0);
+  box-shadow: 3px 3px 5px 6px rgb(32, 29, 29);
+  padding: 10px;
+  transition: background 1s ease-in-out;
 }
